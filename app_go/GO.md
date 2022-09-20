@@ -57,3 +57,17 @@ For Markdown were used:
 and respective [VSCode plugin](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint):
 
    ``markdownlint <filename>``
+
+## Unit tests
+
+The code is tested with 2 scenarios:
+
+1. Correct response with correct time to correct request
+2. 404 Error to invalid request
+
+## Unit tests best practices
+
+1. Tests Should Be Fast
+2. Tests Should Be Readable
+3. Tests Should Be Deterministic
+(I have patched time.Now function to freeze the time)

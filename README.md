@@ -1,5 +1,8 @@
 # Kremlin chimes
 
+![app_python](https://github.com/danmory/devops_labs/actions/workflows/app_python.yaml/badge.svg)
+![app_go](https://github.com/danmory/devops_labs/actions/workflows/app_go.yaml/badge.svg)
+
 ## Description
 
 The application shows the current Moscow time.
@@ -67,6 +70,16 @@ The application written using two different technologies:
 
 5. The application will run on <http://127.0.0.1:8000>
 
+### [Python] - Unit Tests
+
+1. Setup all requirements
+
+    ``$ pip install -r requirements.txt``
+
+2. Run
+
+    ``$ pytest app_python``
+
 ## GO version of the application
 
 ### [GO] - Requirements
@@ -119,6 +132,20 @@ The application written using two different technologies:
     where *image_name* either *app_go* or *danmory/go_kremlin_chimes*
 
 5. The application will run on <http://127.0.0.1:8080>
+
+### [GO] - Unit Tests
+
+1. Enter application directory
+
+    ``$ cd app_go``
+
+2. Setup all requirements
+
+    ``$ go mod download``
+
+3. Run tests
+
+    `` $ go test . ``
 
 ## Authors and contacts
 
